@@ -1,0 +1,15 @@
+This file contains a class MyCima that provides methods for interacting with the `MyCima` website. It uses the axios library to make HTTP requests and the cheerio library to parse the HTML responses.
+
+The `MyCima` class has the following methods:
+
+- `search(type, query, domain)`: This method is used to search for a movie, series, anime, or TV show on the `MyCima` website. It takes three parameters: type (the type of the search), query (the name of the movie or series or anime or TV), and domain (the domain of the website).
+
+- `Info(url)`: This method is used to get information about a specific movie, series, anime, or TV show. It takes one parameter: url (the URL of the movie or series or anime or TV show).
+
+- `Watch(url)`: This method is used to get the watch links for a specific movie, series, anime, or TV show. It takes one parameter: url (the URL of the movie or series or anime or TV show).
+
+- `GetSeaseon(url)`: This method is used to get the seasons of a specific series. It takes one parameter: url (the URL of the series).
+
+- `GetEpisodes(url)`: This method is used to get the episodes of a specific season. It takes one parameter: url (the URL of the season).
+
+Each method returns a promise that resolves to an array of objects, where each object represents a search result, a piece of information, a watch link, a season, or an episode, depending on the method.
